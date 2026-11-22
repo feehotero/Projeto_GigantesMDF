@@ -1,0 +1,10 @@
+# Documentação gerada pelo Doxygen
+docs/html/
+docs/latex/
+# Arquivos de compilação
+build/
+*.elf
+*.hex
+*.o
+sdkconfig
+sdkconfig.old

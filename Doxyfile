@@ -1,0 +1,35 @@
+# Doxyfile do projeto Gigantes de MDF (somente as opções diferentes do padrão).
+# Para gerar a documentação:  doxygen Doxyfile   (abrir docs/html/index.html)
+
+PROJECT_NAME           = "Gigantes de MDF"
+PROJECT_BRIEF          = "Robô de combate controlado por ESP32 (Bluetooth) e ATmega328P"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = Brazilian
+DOXYFILE_ENCODING      = UTF-8
+
+INPUT                  = README.md atmega esp32
+FILE_PATTERNS          = *.c *.h *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = .
+
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+JAVADOC_AUTOBRIEF      = YES
+MARKDOWN_SUPPORT       = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+PREDEFINED             = "ISR(x)=void x(void)"
+
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
